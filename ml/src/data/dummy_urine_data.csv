@@ -1,0 +1,33 @@
+# Contoh dataset dummy untuk klasifikasi penyakit saluran kemih
+# Ini adalah contoh sederhana. Dalam proyek nyata, Anda akan membutuhkan data yang lebih kompleks dan representatif.
+# Warna Urine: 0=Bening, 1=Kuning Pekat, 2=Coklat, 3=Merah
+# Bau Urine: 0=Normal, 1=Menyengat
+# Frekuensi Buang Air: 0=Jarang, 1=Normal, 2=Sering
+# Nyeri Saat Buang Air: 0=Tidak, 1=Ya
+# Diagnosis: 0=Sehat, 1=ISK, 2=Batu Ginjal, 3=Dehidrasi
+
+warna_urine,bau_urine,frekuensi_buang_air,nyeri_saat_buang_air,diagnosis
+0,0,1,0,0
+1,0,1,0,0
+2,1,2,1,1
+3,1,2,1,1
+0,0,0,0,3
+1,0,0,0,3
+2,1,2,0,2
+3,1,2,0,2
+0,0,1,0,0
+1,0,1,0,0
+2,1,2,1,1
+3,1,2,1,1
+0,0,0,0,3
+1,0,0,0,3
+2,1,2,0,2
+3,1,2,0,2
+0,0,1,0,0
+1,0,1,0,0
+2,1,2,1,1
+3,1,2,1,1
+0,0,0,0,3
+1,0,0,0,3
+2,1,2,0,2
+3,1,2,0,2
