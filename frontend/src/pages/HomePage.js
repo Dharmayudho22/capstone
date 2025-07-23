@@ -11,11 +11,11 @@ const HomePage = ({ navigateTo }) => {
         <div className="flex justify-between items-center p-6 bg-white">
           <div className="text-3xl font-bold text-teal-600">U-DETECT</div>
           <nav className="flex space-x-6 text-lg font-medium">
-            <a href="#" className="text-gray-700 hover:text-teal-600">Home</a>
+            {/* <a href="#" className="text-gray-700 hover:text-teal-600">Home</a>
             <a href="#" className="text-gray-700 hover:text-teal-600">Penjadwalan</a>
             <a href="#" className="text-gray-700 hover:text-teal-600">Service</a>
             <a href="#" className="text-gray-700 hover:text-teal-600">Contact</a>
-            <a href="#" className="text-gray-700 hover:text-teal-600">Berita</a>
+            <a href="#" className="text-gray-700 hover:text-teal-600">Berita</a> */}
           </nav>
           <div className="flex space-x-4">
             {currentUser ? (
