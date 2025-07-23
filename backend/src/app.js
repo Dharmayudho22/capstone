@@ -3,6 +3,7 @@ import cors from 'cors';
 import authRoutes from './routes/authRoutes.js';
 import diagnosisRoutes from './routes/diagnosisRoutes.js';
 import historyRoutes from './routes/historyRoutes.js';
+import scheduleRoutes from './routes/scheduleRoutes.js'; // Impor rute jadwal baru
 // Import koneksi database
 import { connectDB } from './config/database.js';
 // Import model untuk memastikan mereka terdaftar dengan Sequelize
@@ -22,6 +23,7 @@ app.use(express.json()); // Mengurai body permintaan JSON
 app.use('/api/auth', authRoutes);
 app.use('/api/diagnosis', diagnosisRoutes);
 app.use('/api/history', historyRoutes);
+app.use('/api/schedule', scheduleRoutes); // Tambahkan rute jadwal baru
 
 // Rute dasar untuk menguji server
 app.get('/', (req, res) => {

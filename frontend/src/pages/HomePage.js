@@ -63,7 +63,7 @@ const HomePage = ({ navigateTo }) => {
           <div className="md:w-1/2 flex justify-center items-center">
             {/* Menggunakan placeholder image karena gambar asli tidak dapat diakses secara langsung */}
             <img
-              src="[https://placehold.co/400x400/a7f3d0/134e4a?text=Dokter+Urine](https://placehold.co/400x400/a7f3d0/134e4a?text=Dokter+Urine)"
+              src="/gambar/images2.webp"
               alt="Dokter memeriksa sampel urine"
               className="rounded-lg shadow-xl max-w-full h-auto"
               onError={(e) => { e.target.onerror = null; e.target.src = "[https://placehold.co/400x400/a7f3d0/134e4a?text=Gambar+Tidak+Tersedia](https://placehold.co/400x400/a7f3d0/134e4a?text=Gambar+Tidak+Tersedia)"; }}

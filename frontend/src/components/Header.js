@@ -16,11 +16,12 @@ const Header = ({ navigateTo }) => {
         U-DETECT
       </div>
       <nav className="flex items-center space-x-6">
+        {/* Menggunakan span dengan onClick karena ini adalah navigasi internal */}
         <span className="text-gray-700 hover:text-teal-600 cursor-pointer" onClick={() => navigateTo('home')}>Home</span>
-        {/* <span className="text-gray-700 hover:text-teal-600 cursor-pointer">Penjadwalan</span> */}
-        {/* <span className="text-gray-700 hover:text-teal-600 cursor-pointer">Service</span> */}
-        {/* <span className="text-gray-700 hover:text-teal-600 cursor-pointer">Contact</span> */}
-        {/* <span className="text-gray-700 hover:text-teal-600 cursor-pointer">Berita</span> */}
+        <span className="text-gray-700 hover:text-teal-600 cursor-pointer" onClick={() => navigateTo('schedule')}>Penjadwalan</span>
+        <span className="text-gray-700 hover:text-teal-600 cursor-pointer" onClick={() => navigateTo('service')}>Service</span>
+        <span className="text-gray-700 hover:text-teal-600 cursor-pointer" onClick={() => navigateTo('contact')}>Contact</span>
+        <span className="text-gray-700 hover:text-teal-600 cursor-pointer" onClick={() => navigateTo('news')}>Berita</span>
         {currentUser ? (
           <>
             <span className="text-gray-700">Halo, {currentUser.name || currentUser.email}</span>
