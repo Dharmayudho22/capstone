@@ -22,7 +22,7 @@ const SchedulePage = ({ navigateTo }) => {
     }
 
     try {
-      const response = await api.get(`/schedule/doctors?location=${encodeURIComponent(location)}`);
+      const response = await api.get(`https://capstone-backend-6r8j.onrender.com/api/schedule/doctors?location=${encodeURIComponent(location)}`);
       setDoctors(response.data.doctors);
       setMessage(response.data.message);
     } catch (err) {
