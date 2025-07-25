@@ -62,7 +62,7 @@ const InputDataPage = ({ navigateTo }) => {
         return;
       }
 
-      const response = await api.post('/diagnosis/submit', formData, {
+      const response = await api.post('https://capstone-backend-6r8j.onrender.com/api/diagnosis/submit', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }
