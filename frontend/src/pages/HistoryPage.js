@@ -26,7 +26,7 @@ const HistoryPage = ({ navigateTo }) => {
           return;
         }
 
-        const response = await api.get('/history', {
+        const response = await api.get('https://capstone-backend-6r8j.onrender.com/api/history', {
           headers: {
             Authorization: `Bearer ${token}`
           }
