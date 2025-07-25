@@ -23,7 +23,7 @@ const RegisterPage = ({ navigateTo }) => {
     }
 
     try {
-      const response = await api.post('/auth/register', { email, password, name, phoneNumber });
+      const response = await api.post('https://capstone-backend-6r8j.onrender.com/api/auth/register', { email, password, name, phoneNumber });
       setSuccess(response.data.message);
       // Mungkin arahkan ke halaman login setelah registrasi berhasil
       setTimeout(() => {
