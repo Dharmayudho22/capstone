@@ -3,7 +3,7 @@ import axios from 'axios';
 const api = axios.create({
   // Ganti dengan URL backend Anda.
   // Untuk pengembangan lokal:
-  baseURL: 'http://localhost:5001/api',
+  baseURL: 'https://capstone-backend-6r8j.onrender.com',
   // Untuk deployment, Anda perlu mengganti ini dengan URL server backend yang sebenarnya.
 });
 
