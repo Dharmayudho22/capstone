@@ -15,7 +15,7 @@ const LoginPage = ({ navigateTo }) => {
     setError('');
 
     try {
-      const response = await api.post('/auth/login', { email, password });
+      const response = await api.post('https://capstone-backend-6r8j.onrender.com/api/auth/login', { email, password });
       const { token, user } = response.data;
 
       // Simpan token di localStorage
