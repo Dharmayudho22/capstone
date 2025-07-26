@@ -46,10 +46,11 @@ def home():
     return "API Machine Learning U-Detect Berjalan!"
 
 if __name__ == '__main__':
-    from src.train.train_model import train_and_save_model
-    data_file = os.path.join(os.path.dirname(__file__), 'src/data/dummy_urine_data.csv')
-    model_file = os.path.join(os.path.dirname(__file__), 'src/models/urine_diagnosis_model.pkl')
-    train_and_save_model(data_file, model_file)
+    # from src.train.train_model import train_and_save_model
+    # data_file = os.path.join(os.path.dirname(__file__), 'src/data/dummy_urine_data.csv')
+    # model_file = os.path.join(os.path.dirname(__file__), 'src/models/urine_diagnosis_model.pkl')
+    # train_and_save_model(data_file, model_file)
 
     # Jalankan Flask dengan host=127.0.0.1 dan port yang tidak umum
-    app.run(debug=False, host='127.0.0.1', port=8088)
+    app.run(debug=False, host='0.0.0.0', port=8080)  # 0.0.0.0 agar bisa diakses di render
+
